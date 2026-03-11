@@ -179,7 +179,7 @@ export default function App() {
             </div>
             <div className="p-6 flex-grow flex items-center justify-center bg-dots">
               <div className="w-full bg-white rounded-xl shadow-sm border border-slate-200 p-5">
-                <p className="line-clamp-3 text-sm text-slate-600 font-medium leading-relaxed">
+                <p className="line-clamp-5 text-sm text-slate-600 font-medium leading-relaxed">
                   Esta es una descripción extremadamente larga que necesita ser truncada de manera elegante. Tailwind provee una utilidad fantástica llamada line-clamp que añade puntos suspensivos automáticamente si el texto supera el número de líneas, sin usar JS.
                 </p>
               </div>
@@ -529,6 +529,308 @@ export default function App() {
               </div>
             </div>
           </div>
+
+          {/* --- EXPANSIÓN A 50 COMPONENTES --- */}
+
+          {/* 31. Avatar Group */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">31. Avatar Group</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Mostrar múltiples colaboradores.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> -space-x-4, ring-2, ring-white</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <div className="flex -space-x-3">
+                <div className="w-10 h-10 rounded-full bg-sky-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold shadow-sm">U1</div>
+                <div className="w-10 h-10 rounded-full bg-indigo-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold shadow-sm">U2</div>
+                <div className="w-10 h-10 rounded-full bg-rose-500 border-2 border-white flex items-center justify-center text-white text-xs font-bold shadow-sm">U3</div>
+                <div className="w-10 h-10 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center text-slate-600 text-xs font-bold shadow-sm">+5</div>
+              </div>
+            </div>
+          </div>
+
+          {/* 32. Timeline (Bordes) */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">32. Mini Timeline</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Historial de actividades o estados.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> border-l-2, -left-[5px]</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <div className="border-l-2 border-sky-200 pl-4 py-2 space-y-4 relative w-3/4">
+                <div className="relative">
+                  <div className="absolute w-2.5 h-2.5 bg-sky-500 rounded-full -left-[21px] top-1.5 ring-4 ring-white"></div>
+                  <p className="text-xs font-bold text-slate-800">Creado</p>
+                  <p className="text-[10px] text-slate-500">Hace 2 horas</p>
+                </div>
+                <div className="relative">
+                  <div className="absolute w-2.5 h-2.5 bg-slate-300 rounded-full -left-[21px] top-1.5 ring-4 ring-white"></div>
+                  <p className="text-xs font-bold text-slate-500">En proceso</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 33. File Input Custom */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">33. File Input Custom</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Subida de archivos (Avatares/Docs).</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> file:mr-4, file:rounded-full</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <input type="file" className="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-xs file:font-semibold file:bg-sky-50 file:text-sky-700 hover:file:bg-sky-100 cursor-pointer" />
+            </div>
+          </div>
+
+          {/* 34. Chat Bubble */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">34. Chat Bubble</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Interfaces de mensajería (WhatsApp/IA).</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> rounded-br-none, rounded-tl-none</p>
+            </div>
+            <div className="p-6 flex-grow flex flex-col justify-center gap-2 bg-dots">
+              <div className="bg-slate-200 text-slate-800 p-3 rounded-2xl rounded-tl-none text-xs w-3/4 self-start shadow-sm">¡Hola! ¿En qué te ayudo?</div>
+              <div className="bg-sky-500 text-white p-3 rounded-2xl rounded-br-none text-xs w-3/4 self-end shadow-sm">Mejoremos el portafolio.</div>
+            </div>
+          </div>
+
+          {/* 35. Rating Stars */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">35. Rating Stars</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Reseñas de productos o testimonios.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> text-amber-400, fill-current</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <div className="flex gap-1 text-amber-400">
+                {[1, 2, 3, 4].map(i => <svg key={i} className="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.858 1.4-8.168-5.934-5.787 8.2-1.192z"/></svg>)}
+                <svg className="w-6 h-6 fill-current text-slate-300" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.858 1.4-8.168-5.934-5.787 8.2-1.192z"/></svg>
+              </div>
+            </div>
+          </div>
+
+          {/* 36. Tecla Kbd */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">36. Keyboard Key (Kbd)</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Atajos de teclado en documentación.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> shadow-[0_3px_0_0_...], border-b-2</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center gap-2 bg-dots">
+              <kbd className="px-3 py-1.5 bg-white border border-slate-300 rounded-lg shadow-[0_3px_0_0_rgba(203,213,225,1)] text-slate-700 font-mono text-sm font-bold">Ctrl</kbd>
+              <span className="text-slate-400">+</span>
+              <kbd className="px-3 py-1.5 bg-white border border-slate-300 rounded-lg shadow-[0_3px_0_0_rgba(203,213,225,1)] text-slate-700 font-mono text-sm font-bold">K</kbd>
+            </div>
+          </div>
+
+          {/* 37. Tooltip Custom */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">37. Tooltip Animado</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Información adicional al hacer hover.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> group-hover:scale-100, origin-bottom</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots pt-10">
+              <div className="relative group cursor-pointer">
+                <span className="bg-sky-100 text-sky-800 px-3 py-1 rounded font-bold text-sm">Pasa el ratón</span>
+                <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-slate-900 text-white text-xs rounded-md opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transition-all origin-bottom whitespace-nowrap pointer-events-none">
+                  ¡Tooltip CSS puro!
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-slate-900"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 38. Blockquote */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">38. Citas (Blockquote)</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Artículos de blog y testimonios.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> border-l-4, italic</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <blockquote className="border-l-4 border-sky-500 bg-white p-4 shadow-sm rounded-r-lg w-full">
+                <p className="text-sm italic text-slate-600">"La simplicidad es el alma de la eficiencia."</p>
+                <footer className="text-[10px] font-bold text-slate-400 mt-2">— Austin Freeman</footer>
+              </blockquote>
+            </div>
+          </div>
+
+          {/* 39. Ring Offset */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">39. Ring Offset</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Botones con enfoque dual (Accesibilidad).</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> ring-offset-2, ring-offset-slate-50</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <button className="px-5 py-2 bg-slate-900 text-white rounded-lg font-bold text-sm focus:outline-none focus:ring-2 focus:ring-slate-900 focus:ring-offset-4 focus:ring-offset-slate-100 transition-all">
+                Haz Tab o Click
+              </button>
+            </div>
+          </div>
+
+          {/* 40. List Markers */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">40. List Markers Custom</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Listas ordenadas/desordenadas elegantes.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> marker:text-sky-500, list-decimal</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center bg-dots px-8">
+              <ul className="list-disc marker:text-sky-500 text-sm text-slate-700 space-y-1 pl-5">
+                <li>Aprender React</li>
+                <li>Dominar Tailwind v4</li>
+                <li className="marker:text-emerald-500">Conseguir trabajo</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* 41. Caret Color */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">41. Caret Color</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Personalizar el cursor parpadeante de escritura.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> caret-rose-500</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <input type="text" placeholder="Escribe aquí..." className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-rose-300 caret-rose-500 text-sm shadow-sm" />
+            </div>
+          </div>
+
+          {/* 42. Detalles Nativos */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">42. Details (Acordeón HTML)</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> FAQs nativas sin usar JavaScript.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> open:bg-white, open:shadow-md</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <details className="w-full bg-white border border-slate-200 rounded-lg p-3 open:shadow-sm open:ring-1 open:ring-sky-100 transition-all cursor-pointer">
+                <summary className="font-bold text-sm text-slate-800 select-none">¿Qué es esto?</summary>
+                <p className="mt-2 text-xs text-slate-600 border-t pt-2">Un elemento HTML nativo estilizado con los modificadores open: de Tailwind.</p>
+              </details>
+            </div>
+          </div>
+
+          {/* 43. Ribbon Absolute */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">43. Ribbon (Cinta Absolute)</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Etiquetas de "Oferta" o "Nuevo" en productos.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> absolute, -right-2, -top-2</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <div className="relative w-3/4 h-20 bg-white border border-slate-200 rounded-xl shadow-sm flex items-center justify-center">
+                <span className="font-bold text-sm text-slate-400">Producto</span>
+                <div className="absolute -right-2 -top-2 bg-rose-500 text-white text-[10px] font-black px-2 py-1 rounded shadow-md transform rotate-12">NUEVO</div>
+              </div>
+            </div>
+          </div>
+
+          {/* 44. Skewed Background */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">44. Skewed Background</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Secciones dinámicas en Landing Pages.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> -skew-y-3</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots overflow-hidden">
+              <div className="relative w-full h-24 bg-white flex items-center justify-center shadow-sm rounded border">
+                <div className="absolute inset-0 bg-sky-100 -skew-y-6 transform origin-left z-0"></div>
+                <span className="relative z-10 font-black text-sky-800 italic">DIAGONAL</span>
+              </div>
+            </div>
+          </div>
+
+          {/* 45. First-Letter */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">45. First Letter (Drop Cap)</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Estilos periodísticos en artículos.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> first-letter:text-4xl, first-letter:font-black</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center bg-dots">
+              <div className="bg-white p-4 rounded-xl shadow-sm border w-full">
+                <p className="text-xs text-slate-600 first-letter:text-4xl first-letter:font-black first-letter:text-sky-500 first-letter:mr-1 first-letter:float-left">
+                  Érase una vez una utilidad CSS que permitía estilizar la primera letra sin necesidad de envolverla en un span.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* 46. Placeholder Modifier */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">46. Placeholder Custom</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Inputs temáticos (Modo oscuro o branding).</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> placeholder:text-sky-300, placeholder:italic</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <input type="text" placeholder="Escribe en texto fantasma..." className="w-full px-4 py-2 border rounded-lg focus:outline-none bg-slate-900 text-white placeholder:text-slate-500 placeholder:italic placeholder:font-light shadow-sm" />
+            </div>
+          </div>
+
+          {/* 47. Print Modifier */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">47. Print Modifier</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Ocultar botones al imprimir la página (Ctrl+P).</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> print:hidden</p>
+            </div>
+            <div className="p-6 flex-grow flex flex-col items-center justify-center bg-dots gap-2">
+              <p className="text-xs font-bold text-slate-700 text-center">Presiona <kbd>Ctrl+P</kbd> y verás que este botón desaparece en la vista previa:</p>
+              <button className="bg-rose-500 text-white px-4 py-1.5 rounded text-xs font-bold shadow-sm print:hidden">Botón No Imprimible</button>
+            </div>
+          </div>
+
+          {/* 48. Odd/Even Selectors */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">48. Odd/Even (Listas Cebra)</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Tablas o listas de datos legibles.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> odd:bg-slate-50, even:bg-white</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <ul className="w-full border rounded-xl overflow-hidden shadow-sm text-sm">
+                <li className="p-2 odd:bg-slate-100 even:bg-white text-slate-700">Fila 1 (Gris)</li>
+                <li className="p-2 odd:bg-slate-100 even:bg-white text-slate-700">Fila 2 (Blanca)</li>
+                <li className="p-2 odd:bg-slate-100 even:bg-white text-slate-700">Fila 3 (Gris)</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* 49. Empty State Modifier */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">49. Empty Modifier</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Ocultar o estilizar divs vacíos dinámicos.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> empty:hidden</p>
+            </div>
+            <div className="p-6 flex-grow flex flex-col items-center justify-center bg-dots gap-2">
+              <div className="bg-sky-500 text-white px-4 py-2 rounded text-xs shadow-sm empty:hidden">Caja con datos</div>
+              {/* Esta caja no se renderiza visualmente porque está vacía y tiene empty:hidden */}
+              <div className="bg-rose-500 p-4 rounded empty:hidden"></div>
+              <p className="text-[10px] text-slate-500 text-center mt-1">Hay una caja roja aquí, pero está oculta por estar vacía.</p>
+            </div>
+          </div>
+
+          {/* 50. Animated Gradient BG */}
+          <div className="flex flex-col bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div className="p-4 border-b border-slate-100 bg-slate-50">
+              <h3 className="text-base font-bold text-slate-800">50. Gradiente Animado</h3>
+              <p className="text-[11px] text-slate-600 mt-1"><strong className="text-sky-600">Uso:</strong> Tarjetas Premium o botones especiales.</p>
+              <p className="text-[11px] text-slate-500"><strong className="text-indigo-500">Clases:</strong> bg-[length:200%_200%], animate-pulse</p>
+            </div>
+            <div className="p-6 flex-grow flex items-center justify-center bg-dots">
+              <button className="px-6 py-3 rounded-xl text-white font-black shadow-lg bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 bg-[length:200%_200%] animate-pulse hover:animate-none transition-all">
+                PREMIUM
+              </button>
+            </div>
+          </div>
+
 
         </div>
       </main>

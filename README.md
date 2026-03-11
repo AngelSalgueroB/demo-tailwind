@@ -14,3 +14,12 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+# 1. Agrega todos los archivos modificados (los 50 componentes y correcciones)
+git add .
+
+# 2. Crea el commit con un mensaje descriptivo
+git commit -m "feat: expansión a 50 componentes y corrección de enlaces preventDefault"
+
+# 3. Sube los cambios a tu repositorio en GitHub
+git push
